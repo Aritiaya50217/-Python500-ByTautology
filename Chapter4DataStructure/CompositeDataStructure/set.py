@@ -53,5 +53,25 @@ setA = {1,2,3,4,5}
 setB = {3,4,5,6,7,8}
 print("SetA Union SetB :",setA | setB)
 
-# Set + Difference
+# Set + Intersection
+# สมาชิกที่มีร่วมกัน
+setC = {1,2,3,4,5}
+setD = {3,4,5,6,7,8}
+print(setC & setD)
 
+# Set + Difference
+setE = {1,2,3,4,5}
+setF = {3,4,5,6,7}
+# สมาชิกที่มีใน E แต่ ไม่มีใน F
+print(setE - setF) 
+# สมาชิกที่มีใน F แต่ ไม่มีใน E
+print(setF - setE) 
+
+
+# Set + Symmetric Difference
+''' (setG ∪ setH) - (setG ∩ setH)
+สมาชิกของทั้ง 2 set - สมาชิกที่มีในทั้ง 2 set
+''' 
+setG = {1,2,3,4,5}
+setH = {3,4,5,6,7}
+print(setG ^ setH) # output {1, 2, 6, 7}
